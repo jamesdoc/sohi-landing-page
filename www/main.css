@@ -1,0 +1,227 @@
+/* Normalise all the things */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}
+
+/* And off we go... */
+@import url(https://fonts.googleapis.com/css?family=Quicksand:700);
+
+body {
+  background: white;
+  background: -webkit-linear-gradient(left, #dee6e8 0%, #f3ffed 99%);
+  background: linear-gradient(to right, #dee6e8 0%,#f3ffed 99%);
+  box-sizing: border-box;
+  color: #0f96bc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Quicksand, 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-weight: bold;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1em;
+  text-transform: lowercase;
+}
+
+header {
+  background-image: url('/logo.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  display: table;
+  margin-top: 1em;
+  padding-right: 10em;
+}
+
+.title {
+  color: #66ca38;
+  line-height: 2em;
+  margin: 0;
+}
+
+.title__sohi {
+  color: #0f96bc;
+  display: block;
+  font-size: 2.55em
+}
+
+.title__world {
+  display: block;
+  font-size: 1.825em;
+}
+
+.title__world--w {
+  letter-spacing: -4px;
+}
+
+.title__world--l {
+  letter-spacing: 2px;
+}
+
+.newssignup {
+  margin: 1.5em 0;
+}
+
+.newssignup p {
+  margin: 0.35em 0;
+}
+
+.newssignup p:first-child {
+  font-size: 1.25em;
+}
+
+.newssignup__inputgroup {
+  position:relative;
+  margin: 1.5em 0;
+}
+
+.newssignup__inputgroup__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0f96bc;
+  cursor: pointer;
+  color: #0f96bc;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1em;
+  padding: 1em 0;
+  -webkit-transition: 0.2s ease all;
+          transition: 0.2s ease all;
+  width: 100%;
+}
+
+.newssignup__inputgroup label {
+  font-size: 1em;
+  position: absolute;
+  pointer-events: none;
+  top: 1em;
+  -webkit-transition: 0.2s ease all;
+          transition: 0.2s ease all;
+}
+
+.newssignup__inputgroup input:focus{
+  color: #66ca38;
+  outline: none;
+}
+
+.newssignup__inputgroup input:focus ~ label,
+.newssignup__inputgroup input.set ~ label{
+  font-size: 0.825em;
+  left: 0;
+  top: -1em;
+}
+
+.newsignup__alerts {
+  margin: 1.5em 0;
+  display: none;
+}
+
+.newsignup__alerts p,
+.newsignup__alerts p:first-child {
+  font-size: 1em;
+  color: red;
+}
+
+.newssignup__submit {
+  background-color: #0f96bc;
+  border: 0;
+  border-radius: 0.25em;
+  color: #fff;
+  margin: 0.5em 0 0;
+  padding: 0.825em 1em;
+  text-transform: lowercase;
+  -webkit-transition:0.2s ease all;
+          transition:0.2s ease all;
+}
+
+.newssignup__submit:hover {
+  background-color: #0174ba;
+}
+
+.newssignup__submit:focus{
+  background-color: #66ca38;
+  outline: none;
+}
+
+
+
+footer {
+  margin: 1em 0 0 0;
+}
+
+.meta {
+  margin: 0;
+  padding: 0;
+}
+
+.meta li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.meta--copyright li {
+  font-size: 0.825em;
+}
+
+.meta--copyright a {
+  border-bottom: 1px dotted #66ca38;
+  color: #0174ba;
+  text-decoration: none;
+  -webkit-transition:0.2s ease all;
+          transition:0.2s ease all;
+}
+
+.meta--copyright a:hover {
+  color: #66ca38;
+}
+
+@media (min-width: 450px) {
+  .meta--copyright li {
+    border-left: 1px dotted #ccc;
+    display: inline;
+    margin-left: 0.75em;
+    padding-left: 0.75em;
+  }
+
+  .meta--copyright li:first-child {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 550px) {
+  body {
+    padding: 0 3em;
+  }
+
+  form {
+    max-width: 500px;
+  }
+}
+
+@media (min-height: 600px) {
+
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  header {
+    margin-top: 3em;
+  }
+
+  footer {
+    bottom: 1em;
+    position: absolute;
+  }
+}
