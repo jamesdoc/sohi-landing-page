@@ -117,9 +117,32 @@ header {
   top: -1em;
 }
 
+.newssignup__inputgroup--select {
+  margin-top: 2em;
+}
+
+.newssignup__inputgroup--select select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: url(down-triangle.png) no-repeat center right;
+  background-size: 25px;
+  border-radius: 0;
+}
+
+.newssignup__inputgroup--select select:focus {
+  outline: none
+}
+
+.newssignup__inputgroup--select label {
+  margin-top: -2em;
+  font-size: 0.825em;
+}
+
 .newsignup__alerts {
   margin: 1.5em 0;
   display: none;
+  left: 0;
+  top: -1em;
 }
 
 .newsignup__alerts p,
