@@ -6,8 +6,6 @@ img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-
 
 body {
   background: white;
-  background: -webkit-linear-gradient(left, #dee6e8 0%, #f3ffed 99%);
-  background: linear-gradient(to right, #dee6e8 0%,#f3ffed 99%);
   box-sizing: border-box;
   color: #0f96bc;
   display: -webkit-box;
@@ -25,60 +23,43 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 0 1em;
   text-transform: lowercase;
+  width: 100%;
 }
 
 header {
-  background-image: url('/logo.png');
+  background-image: url('sohiworld-logo-full.png');
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: center center;
   background-size: contain;
   display: table;
-  margin-top: 1em;
-  padding-right: 10em;
+  margin-top: 5px;
+  width: 100%;
 }
 
 .title {
-  color: #66ca38;
-  line-height: 2em;
-  margin: 0;
-}
-
-.title__sohi {
-  color: #0f96bc;
-  display: block;
-  font-size: 2.55em
-}
-
-.title__world {
-  display: block;
-  font-size: 1.825em;
-}
-
-.title__world--w {
-  letter-spacing: -4px;
-}
-
-.title__world--l {
-  letter-spacing: 2px;
+  text-indent: -99999999px;
 }
 
 .newssignup {
-  margin: 1.5em 0;
+  margin: 0.5em 0;
 }
 
 .newssignup p {
-  margin: 0.35em 0;
+  text-align: center;
+  margin: 0.5em 0;
 }
 
-.newssignup p:first-child {
-  font-size: 1.25em;
+.newssignup__headline {
+  font-size: 1.5em;
 }
 
 .newssignup__inputgroup {
   position:relative;
-  margin: 1.5em 0;
+  margin: 1em 0;
 }
 
 .newssignup__inputgroup__input {
@@ -172,8 +153,6 @@ header {
   outline: none;
 }
 
-
-
 footer {
   margin: 1em 0 0 0;
 }
@@ -225,13 +204,20 @@ footer {
     padding: 0 3em;
   }
 
+  header {
+    background-position: left center;
+  }
+
+  .newssignup p {
+    text-align: left;
+  }
+
   form {
     max-width: 500px;
   }
 }
 
-@media (min-height: 600px) {
-
+@media (min-height: 650px) {
   html, body {
     height: 100%;
     overflow-x: hidden;
@@ -239,7 +225,19 @@ footer {
   }
 
   header {
-    margin-top: 3em;
+    height: 115px;
+  }
+
+  .newssignup {
+    margin: 1.5em 0;
+  }
+
+  .newssignup p {
+    margin: 1em 0;
+  }
+
+  .newssignup__inputgroup {
+    margin: 1.5em 0;
   }
 
   footer {
