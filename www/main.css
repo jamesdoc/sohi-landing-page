@@ -31,17 +31,21 @@ body {
 }
 
 header {
-  background-image: url('sohiworld-logo-full.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  display: table;
+  display: block;
   margin-top: 5px;
   width: 100%;
 }
 
 .title {
-  text-indent: -99999999px;
+  background-image: url('sohiworld-logo-full.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-top: 5px;
+  width: 100%;
+  display: block;
+  height: 50px;
+  transition: height 0.5s;
 }
 
 .newssignup {
@@ -204,7 +208,7 @@ footer {
     padding: 0 3em;
   }
 
-  header {
+  .title {
     background-position: left center;
   }
 
@@ -217,6 +221,12 @@ footer {
   }
 }
 
+@media (min-height: 550px) {
+  .title {
+    height: 75px;
+  }
+}
+
 @media (min-height: 650px) {
   html, body {
     height: 100%;
@@ -224,7 +234,7 @@ footer {
     width: 100%;
   }
 
-  header {
+  .title {
     height: 115px;
   }
 
